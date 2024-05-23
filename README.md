@@ -16,3 +16,18 @@ Permite que você defina uma classe filha que reutiliza (herda), estende ou modi
 
 ### Polimorfismo
 Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+
+# Implementações que farei
+* Implementar uma classe agência filha de um banco
+* Mudar o atributo nome da classe banco para final e remover método set
+* Passar o parâmetro contas e seus métodos de manipulação para a classe agência
+* criar uma parâmetro de lista de agências na classe banco
+* criar métodos para adicionar e remover agências na classe banco
+* na nova classe agências criar uma lista de clientes e métodos para adicionar e remover clientes
+* na classe Cliente deve haver um parâmetro Conta
+* remover parametro agencia da classe Conta
+* remover parâmetro Cliente da classe Conta
+* remover get agencia da classe conta
+* método imprimirInfosComuns() mudará de local para a classe cliente
+* por padrão toda conta é corrente, portanto a classe conta virará ContaCorrente e a classe ContaPoupanca será filha de uma conta corrente
+* implementar método calcularGanhos na classe ContaPoupanca
