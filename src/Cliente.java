@@ -2,7 +2,13 @@
 public class Cliente {
 
 	private String nome;
-
+        private Conta contaDoCliente;
+        
+        Cliente(String nome, Conta conta){
+            this.nome = nome;
+            contaDoCliente = conta;
+        }
+        
 	public String getNome() {
 		return nome;
 	}
