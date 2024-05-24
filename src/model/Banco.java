@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 
 public class Banco {
@@ -5,7 +7,7 @@ public class Banco {
 	final String NOME;
         private ArrayList<Agencia> agenciasDoBanco = new ArrayList();
         
-        Banco(String nomeDoBanco){
+        public Banco(String nomeDoBanco){
             NOME = nomeDoBanco;
         }
         

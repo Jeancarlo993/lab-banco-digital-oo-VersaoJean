@@ -30,3 +30,7 @@ Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é ca
 * remover get agencia da classe conta ok
 * método imprimirInfosComuns() mudará de local para a classe cliente ok
 * implementar método calcularGanhos na classe ContaPoupanca
+* Implementar classe CaixaEletronico, responsável por carregar os dados de um banco, carregar a agencia, o cliente e a conta de um usuário
+* organizar todas as classes em pacotes "model", "controller" e "default package"
+* em model ficarão as classes de conta, cliente, banco, agencia. Em controller ficará classe CaixaEletronico. No default package ficará a classe main
+* Metodo construtor da classe CaixaEletronico instancia todos as classes banco, agencia, clientes, contas

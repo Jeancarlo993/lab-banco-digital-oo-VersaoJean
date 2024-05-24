@@ -1,10 +1,12 @@
+package model;
+
 
 public class Cliente {
 
 	private String nome;
         private Conta contaDoCliente;
         
-        Cliente(String nome, Conta conta){
+        public Cliente(String nome, Conta conta){
             this.nome = nome;
             contaDoCliente = conta;
         }
