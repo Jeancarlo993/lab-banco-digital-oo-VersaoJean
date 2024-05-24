@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Banco {
 
 	final String NOME;
-        private ArrayList<Agencia> agenciasDoBanco = new ArrayList();
+    private ArrayList<Agencia> agenciasDoBanco = new ArrayList();
         
-        public Banco(String nomeDoBanco){
-            NOME = nomeDoBanco;
-        }
+    public Banco(String nomeDoBanco){
+        NOME = nomeDoBanco;
+    }
         
 	public String getNome() {
 		return NOME;
