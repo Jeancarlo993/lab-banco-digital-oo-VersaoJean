@@ -6,7 +6,10 @@ public class Banco {
 
 	final String NOME;
     private ArrayList<Agencia> agenciasDoBanco = new ArrayList();
-        
+    
+    public Agencia getAgencia(int n){
+        return agenciasDoBanco.get(n);
+    }
     public Banco(String nomeDoBanco){
         NOME = nomeDoBanco;
     }

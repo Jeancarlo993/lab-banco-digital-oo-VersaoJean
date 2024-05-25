@@ -14,21 +14,25 @@ public class Agencia{
     private final int CODIGO;
     private ArrayList<Cliente> clientesDaAgencia = new ArrayList();
     
+    public int getCODIGO(){return CODIGO;}
+    
+    public Cliente getClientesDaAgencia(int n){return clientesDaAgencia.get(n);};
+    
     public Agencia(int codigoDaAgencia){
         CODIGO=codigoDaAgencia;
     }
     
-        public void addCliente(Cliente e){
-            if(clientesDaAgencia != null){
-                for(Cliente cliente : clientesDaAgencia){
-                    if(cliente.equals(e)){
-                        System.out.println("Cliente ja existe!!!");
-                        return;
-                    }
+    public void addCliente(Cliente e){
+        if(clientesDaAgencia != null){
+            for(Cliente cliente : clientesDaAgencia){
+                if(cliente.equals(e)){
+                    System.out.println("Cliente ja existe!!!");
+                    return;
                 }
             }
-            clientesDaAgencia.add(e);
         }
+        clientesDaAgencia.add(e);
+    }
         
         public void removeAgencia(Cliente a){
             try{

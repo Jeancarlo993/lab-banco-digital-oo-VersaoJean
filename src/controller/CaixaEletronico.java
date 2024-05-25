@@ -1,5 +1,6 @@
 package controller;
 
+import java.util.Scanner;
 import model.Agencia;
 import model.Banco;
 import model.Cliente;
@@ -16,8 +17,11 @@ import model.ContaCorrente;
  */
 public class CaixaEletronico {
     // A classe construtora carregara os dados do projeto
+    public Banco bancoA = new Banco("Banco A");
+    public Banco bancoB = new Banco("Banco B");
+    public Scanner scan = new Scanner(System.in);
     public CaixaEletronico() {
-        Banco bancoA = new Banco("Banco A");
+        
         // AGENCIA
         Agencia agenciaAA = new Agencia(00001);
         // CONTAS E CLIENTES DA AGENCIA
@@ -48,20 +52,13 @@ public class CaixaEletronico {
         // FIM DA CRIACAO DA AGENCIA
     }
 
-    public void abrirBanco() {
-        System.out.println("Qual o banco você deseja entrar?");
+    public void operarBanco() {
         System.out.println(bancoA.getNome());
-        System.out.println(bancoB.getNome());
+        System.out.println("Agencia " + bancoA.getAgencia(0).getCODIGO());
+        System.out.println("Conta "+ bancoA.getAgencia(0).getClientesDaAgencia(0).getContaDoCliente().getNumero());
+        System.out.println("Bem vindo "+ bancoA.getAgencia(0).getClientesDaAgencia(0).getNome());
+        System.out.println("Seu saldo R$"+ bancoA.getAgencia(0).getClientesDaAgencia(0).getContaDoCliente().getSaldo());
         
-        // exibir uma lista de bancos
-        // receber nome do banco
-
-        System.out.println("Qual a sua agência?");
-        // exibir uma lista de agencias
-        // receber numero da agencia
-
-        System.out.println("Digite sua conta: ");
-        // carregar conta de um arquivo
-
+         
     }
 }
